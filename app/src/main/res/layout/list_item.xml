@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--TODO 1 : Menambahkan material cardview-->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <!--TODO 2 : Menggunakan Linear Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--TODO 3 : Mengatur dan Menampilkan Teks pada Aplikasi-->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KABAR UTDI "
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!--TODO 4 : Mengatur dan Menampilkan Gambar pada Aplikasi-->
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop" />
+
+        <!--TODO 5 : Mengatur dan Menampilkan Teks pada Aplikasi-->
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:textSize="17sp"/>
+
+        <!--TODO 6 : Mengatur dan Menampilkan Tombol Share pada Aplikasi-->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bagikan Informasi..." />
+
+        <!--TODO 7 : Mengatur dan Menampilkan RadioButton dalam RadioGroup pada Aplikasi-->
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Klik Jika Bermanfaat :)" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Klik Jika Tidak Bermanfaat :(" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
